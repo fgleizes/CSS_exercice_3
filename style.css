@@ -37,7 +37,9 @@ form fieldset:nth-child(3) p {
 form fieldset ul {
   list-style-type: none;
 }
-form fieldset input {
+form fieldset input[type=number],
+form fieldset input[type=text],
+form fieldset input[type=email] {
   margin: .15rem 0;
   width: 200px;
 }
