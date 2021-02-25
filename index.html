@@ -3,9 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Partie 2 CSS - exercice 2</title>
+  <link rel="stylesheet" href="./style.css">
+  <title>Partie 2 CSS - exercice 3</title>
 </head>
 <body>
-  
+  <form>
+    <fieldset>
+      <legend>Votre identité</legend>
+      <ol>
+        <li>
+          <label for="name">Nom :</label>
+          <input type="text" name="name" id="nom" placeholder="Nom" />
+        </li>
+        <li>
+          <label for="firstName">Prénom :</label>
+          <input type="text" name="firstName" id="prenom" placeholder="Prénom" />
+        </li>
+        <li>
+          <label for="email">Adresse mail :</label>
+          <input type="email" name="email" id="email" placeholder="Adresse mail" />
+        </li>
+      </ol>
+    </fieldset>
+    <fieldset>
+      <legend>Adresse de livraison</legend>
+      <ol>
+        <li>
+          <label for="adress">Adresse :</label>
+          <textarea name="adress" id="adress" cols="15" rows="5"></textarea>
+        </li>
+        <li>
+          <label for="zipCode">Code postal :</label>
+          <input type="number" name="zipCode" id="prenom" placeholder="Code postal" />
+        </li>
+        <li>
+          <label for="city">Ville :</label>
+          <input type="text" name="city" id="city" placeholder="Ville" />
+        </li>
+      </ol>
+    </fieldset>
+    <fieldset>
+      <legend>Informations de règlement</legend>
+      <ol>
+        <li>
+          <p for="cardType">Type de carte banquaire :</p>
+          <ul>
+            <li>
+              <input type="radio" name="cardType" id="visa" value="visa" />
+              <label for="visa">VISA</label>
+            </li>
+            <li>
+              <input type="radio" name="cardType" id="mastercard" value="mastercard" />
+              <label for="mastercard">Mastercard</label>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <label for="cardNumber">Numéro de carte :</label>
+          <input type="number" name="cardNumber" id="cardNumber" placeholder="Numéro de carte" />
+        </li>
+        <li>
+          <label for="secureCode">Code de sécurité :</label>
+          <input type="number" name="secureCode" id="secureCode" placeholder="Code de sécurité" max="999" />
+        </li>
+        <li>
+          <label for="cardholderName">Nom du titulaire :</label>
+          <input type="text" name="cardholderName" id="cardholderName" placeholder="Nom du titulaire" />
+        </li>
+      </ol>
+    </fieldset>
+    <input type="submit" value="J'achète !">
+  </form>
 </body>
 </html>

@@ -1,0 +1,43 @@
+/* Pour supprimer les fleches des input type number */
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin:0;
+}
+
+/* Opéra*/
+input::-o-inner-spin-button,
+input::-o-outer-spin-button { 
+	-o-appearance: none;
+	margin:0
+}
+/* *************************************** */
+
+form fieldset:first-child,
+form fieldset:first-child legend {
+  background-color: rgb(0, 113, 174);
+}
+form fieldset:nth-child(2),
+form fieldset:nth-child(2) legend {
+  background-color: rgb(170, 0, 184);
+}
+form fieldset:nth-child(3),
+form fieldset:nth-child(3) legend {
+  background-color: rgb(237, 0, 183);
+}
+form fieldset:nth-child(3) p {
+  margin: 0;
+}
+form fieldset ul {
+  list-style-type: none;
+}
+form fieldset input {
+  margin: .15rem 0;
+  width: 200px;
+}
